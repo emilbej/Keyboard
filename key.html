@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>keyboard</title>
+      <link href="key.css" rel="stylesheet">
+      <script type="text/javascript">
+      var s;
+      let id;
+      var p;
+      document.addEventListener('keydown', function() {keydown()});
+      document.addEventListener('keyup',function() {keyup()});
+      function keydown()
+      {
+        var s = event.which;
+        let id = (("a")+(s));
+        document.getElementById(id).style.backgroundColor="red";
+      }
+      function keyup()
+      {
+        var s = event.which;
+        let id = (("a")+(s));
+        document.getElementById(id).style.backgroundColor="black";
+      }
+     let sleep = (ms) =>
+      {
+        return new Promise(resolve => setTimeout(resolve, ms))
+      }
+      function random(max)
+       {
+         //math.floor skickar ut det största heltalet innan eller = dess argument. Så denna tar ett random tal och multiplicerar det med max för att sedan göra det till det största heltalet.
+         return Math.floor(Math.random() * Math.floor(max))+1;
+       }
+      /* function Wakey()
+      {
+         sleep(2000).then(() =>
+        {
+         let qt = (random(226);
+         if ((47<qt>58)||(64<qt>92))
+         {
+         document.getElementById(("a")+(qt)).style.backgroundColor="blue";
+         }
+        }
+        if (("a")+(qt))==(id)
+        {
+          p++;
+        }
+      }
+      while(1)
+      {
+        document.getElementById(id).onkeydown=keydown();
+        document.getElementById(id).onkeyup=keyup();
+        Wakey();
+      }
+      /* Spel:
+        En tangent lyser up i 1 sekund under random intervaller. Om man lyckas trycka tangenten medans den lyser så får man en poäng.
+
+      */
+
+
+    </script>
+  </head>
+  <body>
+    <div class="koy key first" id=a27>
+     <p> esc </p>
+   </div>
+    <div class="koy key" id=a112 >
+      <p> f1 </p>
+    </div>
+    <div class="koy key" id=a113>
+      <p> f2 </p>
+    </div>
+    <div class="koy key" id=a114>
+      <p> f3 </p>
+    </div>
+    <div class="koy key" id=a115>
+      <p> f4 </p>
+    </div>
+    <div class="koy key" id=a116>
+      <p> f5 </p>
+    </div>
+    <div class="koy key" id=a117>
+      <p> f6 </p>
+    </div>
+    <div class="koy key" id=a118>
+      <p> f7 </p>
+    </div>
+    <div class="koy key" id=a119>
+      <p> f8 </p>
+    </div>
+    <div class="koy key" id=a120>
+      <p> f9 </p>
+    </div>
+    <div class="koy key" id=a121>
+      <p> f10 </p>
+    </div>
+    <div class="koy key" id=a122>
+      <p> f11 </p>
+    </div>
+    <div class="koy key" id=a123>
+      <p> f12 </p>
+    </div>
+    <div class="koy key" id=a45>
+      <p> insert </p>
+    </div>
+    <div class="koy key" id=a46>
+      <p> delete </p>
+    </div>
+
+    <div class="key first" id=a220>
+      <p> § </p>
+    </div>
+    <div class=key id=a49>
+      <p> 1 </p>
+    </div>
+    <div class=key id=a50>
+      <p> 2 </p>
+    </div>
+    <div class=key id=a51>
+      <p> 3 </p>
+    </div>
+    <div class=key id=a52>
+      <p> 4 </p>
+    </div>
+    <div class=key id=a53>
+      <p> 5 </p>
+    </div>
+    <div class=key id=a54>
+      <p> 6 </p>
+    </div>
+    <div class=key id=a55>
+      <p> 7 </p>
+    </div>
+    <div class=key id=a56>
+      <p> 8 </p>
+    </div>
+    <div class=key id=a57>
+      <p> 9 </p>
+    </div>
+    <div class=key id=a48>
+      <p> 0 </p>
+    </div>
+    <div class=key id=a187>
+      <p> + </p>
+    </div>
+    <div class=key id=a219>
+      <p> ´ </p>
+    </div>
+    <div class=key id=a8>
+      <p> ← </p>
+    </div>
+
+    <div class="key first" id=a9>
+      <p> |← →| </p>
+    </div>
+    <div class=key id=a81>
+      <p> Q </p>
+    </div>
+    <div class=key id=a87>
+      <p> W </p>
+    </div>
+    <div class=key id=a69>
+      <p> E </p>
+    </div>
+    <div class=key id=a82>
+      <p> R </p>
+    </div>
+    <div class=key id=a84>
+      <p> T </p>
+    </div>
+    <div class=key id=a89>
+      <p> Y </p>
+    </div>
+    <div class=key id=a85>
+      <p> U </p>
+    </div>
+    <div class=key id=a73>
+      <p> I </p>
+    </div>
+    <div class=key id=a79>
+      <p> O </p>
+    </div>
+    <div class=key id=a80>
+      <p> P </p>
+    </div>
+    <div class=key id=a221>
+      <p> Å </p>
+    </div>
+    <div class=key id=a186>
+      <p> ¨ </p>
+    </div>
+    <div class=key id=a191>
+      <p> ' </p>
+    </div>
+
+    <div class="key first" id=a20>
+      <p> caps lock </p>
+    </div>
+    <div class=key id=a65>
+      <p> A </p>
+    </div>
+    <div class=key id=a83>
+      <p> S </p>
+    </div>
+    <div class=key id=a68>
+      <p> D </p>
+    </div>
+    <div class=key id=a70>
+      <p> F </p>
+    </div>
+    <div class=key id=a71>
+      <p> G </p>
+    </div>
+    <div class=key id=a72>
+      <p> H </p>
+    </div>
+    <div class=key id=a74>
+      <p> J </p>
+    </div>
+    <div class=key id=a75>
+      <p> K </p>
+    </div>
+    <div class=key id=a76>
+      <p> L </p>
+    </div>
+    <div class=key id=a192>
+      <p> Ö </p>
+    </div>
+    <div class=key id=a222>
+      <p> Ä </p>
+    </div>
+    <div class="key dell" id=a13>
+      <p> ┘ </p>
+    </div>
+
+    <div class="key dell first" id=a16>
+      <p id=left> ↑ </p>
+    </div>
+    <div class=key id=a90>
+      <p> Z </p>
+    </div>
+    <div class=key id=a88>
+      <p> X </p>
+    </div>
+    <div class=key id=a67>
+      <p> C </p>
+    </div>
+    <div class=key id=a86>
+      <p> V </p>
+    </div>
+    <div class=key id=a66>
+      <p> B </p>
+    </div>
+    <div class=key id=a78>
+      <p> N </p>
+    </div>
+    <div class=key id=a77>
+      <p> M </p>
+    </div>
+    <div class=key id=a188>
+      <p> , </p>
+    </div>
+    <div class=key id=a190>
+      <p> . </p>
+    </div>
+    <div class=key id=a189>
+      <p> - </p>
+    </div>
+    <div class="key shift" id=a16>
+      <p> ↑ </p>
+    </div>
+
+    <div class="key first" id=a17>
+      <p> ctrl </p>
+    </div>
+    <div class=key>
+      <p> fn </p>
+    </div>
+    <div class=key id=a91>
+      <p>  ╬ </p>
+    </div>
+    <div class=key id=a18>
+      <p> alt </p>
+    </div>
+    <div class=key id=a32>
+      <p> ⊔ </p>
+    </div>
+    <div class=key id=a18>
+      <p> alt gr </p>
+    </div>
+    <div class=key id=a226>
+      <p> &lt | </p>
+    </div>
+    <div class=key id=a37>
+      <p> &lt </p>
+    </div>
+    <div class=key id=a38>
+      <p> ▲ </p>
+    </div>
+    <div class=key id=a40>
+      <p> ▼ </p>
+    </div>
+    <div class=key id=a39>
+      <p> &gt </p>
+    </div>
+
+  </body>
+</html>
